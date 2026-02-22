@@ -1,0 +1,9 @@
+; Engine configuration file.
+; Minimal Godot project scaffold
+
+config_version=5
+
+[application]
+config/name="Five nights of ailurofobia"
+run/main_scene="res://scenes/main/Main.tscn"
+config/features=PackedStringArray("4.2")
