@@ -1,0 +1,59 @@
+
+
+[node name="ConfigPanel" type="PanelContainer" parent="Center"]
+visible = false
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="Center/ConfigPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 14
+
+[node name="VBox" type="VBoxContainer" parent="Center/ConfigPanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="ConfigTitle" type="Label" parent="Center/ConfigPanel/Margin/VBox"]
+layout_mode = 2
+text = "Configuración"
+
+[node name="ConfigSummary" type="Label" parent="Center/ConfigPanel/Margin/VBox"]
+layout_mode = 2
+text = "Resumen de configuración"
+
+[node name="BackButton" type="Button" parent="Center/ConfigPanel/Margin/VBox"]
+layout_mode = 2
+text = "Volver"
+
+[node name="SavesPanel" type="PanelContainer" parent="Center"]
+visible = false
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="Center/SavesPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 14
+
+[node name="VBox" type="VBoxContainer" parent="Center/SavesPanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="SavesTitle" type="Label" parent="Center/SavesPanel/Margin/VBox"]
+layout_mode = 2
+text = "Partidas guardadas"
+
+[node name="SavesList" type="ItemList" parent="Center/SavesPanel/Margin/VBox"]
+custom_minimum_size = Vector2(300, 180)
+layout_mode = 2
+
+[node name="LoadButton" type="Button" parent="Center/SavesPanel/Margin/VBox"]
+layout_mode = 2
+text = "Cargar seleccionada"
+
+[node name="BackButton" type="Button" parent="Center/SavesPanel/Margin/VBox"]
+layout_mode = 2
+text = "Volver"
