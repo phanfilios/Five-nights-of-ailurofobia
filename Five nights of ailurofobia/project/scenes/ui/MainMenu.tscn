@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=3 format=3]
 
 [ext_resource type="Script" path="res://scripts/integration/MainMenuUI.gd" id="1_menu"]
+[ext_resource type="PackedScene" path="res://scenes/ui/MainConfig.tscn" id="2_cfg"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -40,32 +41,7 @@ text = "Configuración"
 layout_mode = 2
 text = "Partidas guardadas"
 
-[node name="ConfigPanel" type="PanelContainer" parent="Center"]
-visible = false
-layout_mode = 2
-
-[node name="Margin" type="MarginContainer" parent="Center/ConfigPanel"]
-layout_mode = 2
-theme_override_constants/margin_left = 14
-theme_override_constants/margin_top = 14
-theme_override_constants/margin_right = 14
-theme_override_constants/margin_bottom = 14
-
-[node name="VBox" type="VBoxContainer" parent="Center/ConfigPanel/Margin"]
-layout_mode = 2
-theme_override_constants/separation = 8
-
-[node name="ConfigTitle" type="Label" parent="Center/ConfigPanel/Margin/VBox"]
-layout_mode = 2
-text = "Configuración"
-
-[node name="ConfigSummary" type="Label" parent="Center/ConfigPanel/Margin/VBox"]
-layout_mode = 2
-text = "Resumen de configuración"
-
-[node name="BackButton" type="Button" parent="Center/ConfigPanel/Margin/VBox"]
-layout_mode = 2
-text = "Volver"
+[node name="ConfigPanel" parent="Center" instance=ExtResource("2_cfg")]
 
 [node name="SavesPanel" type="PanelContainer" parent="Center"]
 visible = false
